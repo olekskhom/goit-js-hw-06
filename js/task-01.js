@@ -13,7 +13,7 @@ const categoryList = document.querySelectorAll('.item ul')
 
 const categoryListArray = []
 
-categoryList.forEach(element => {
+categoryList.forEach((element) => {
     categoryListArray.push(
         `Category: ${title} Elements: ${element.children.length}` 
     )

@@ -21,7 +21,8 @@ const imgListEl = document.querySelector('.gallery')
 
 
 
-const imagesArr = images.map(({url, alt}) => `<li><img src="${url}" alt=${alt}></li>`).join("")
+const imagesArr = images.map(({ url, alt }) => `<li><img src="${url}" 
+alt=${alt} width="300" height="200"></li>`).join("")
 
 
 
