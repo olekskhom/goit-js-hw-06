@@ -1,24 +1,15 @@
 const listEl = document.querySelectorAll('.item');
 
-console.log(`Number of categories: ${listEl.length}`)
+
+const numberOfCategories = listEl.length;
+console.log(`Number of categories: ${numberOfCategories}`);
 
 
-
-const title = document.querySelector('h2').textContent
-console.log(`Category: ${title}`)
-
-const categoryList = document.querySelectorAll('.item ul')
-// console.log(categoryList)
-
-
-const categoryListArray = []
-
-categoryList.forEach((element) => {
-    categoryListArray.push(
-        `Category: ${title} Elements: ${element.children.length}` 
-    )
-    })
-console.log(categoryListArray.join(" "))
-
-
+listEl.forEach((category) => {
+  const title = category.querySelector('h2').textContent;
+    const numberOfElements = category.querySelectorAll('li').length;
+    
+  console.log(`Category: ${title}
+    Elements: ${numberOfElements}`);
+});
 
