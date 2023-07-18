@@ -27,15 +27,5 @@ alt=${alt} width="300" height="200"></li>`).join("")
 
 
 imgListEl.insertAdjacentHTML("beforeend", imagesArr)
-console.log(imagesArr)
 
-
-// const imgClassEl = document.querySelector('img')
-// // console.log(imgClassEl)
-// imgClassEl.style.display = "flex";
-// imgClassEl.style.gap = "50px"
-// console.log(imgClassEl.style)
-
-
-// imgClassEl.classList.add("styles-img")
 
