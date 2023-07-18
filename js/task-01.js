@@ -6,9 +6,11 @@ console.log(`Number of categories: ${numberOfCategories}`);
 
 
 listEl.forEach((category) => {
-  const title = category.querySelector('h2').textContent;
-    const numberOfElements = category.querySelectorAll('li').length;
-    
+  
+  const title = category.firstElementChild.textContent;
+     
+  const numberOfElements = category.lastElementChild.children.length;
+  
   console.log(`Category: ${title}
     Elements: ${numberOfElements}`);
 });
